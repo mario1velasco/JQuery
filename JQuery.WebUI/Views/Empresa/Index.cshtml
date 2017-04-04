@@ -1,0 +1,19 @@
+﻿@using JQuery.Domain.Entities
+@model IEnumerable<Empresa>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index JQUERY</h2>
+
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.ID</h3>
+        @p.NombreEmpresa
+        <h4>@p.Direccion</h4>
+    </div>
+}
+
