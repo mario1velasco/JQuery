@@ -1,37 +1,7 @@
-﻿<h1>JQuery Ejercicios</h1>
-
-<script>
-    $(document).ready(function () {
-        $("#hrefUno").click(function (evento) {
-            evento.preventDefault();
-            $("#hrefUno").attr("class", "claseDos well");
-            $("#hrefUno").text("Clase Dos");
-        });
-        $("#hrefDos").click(function (e) {
-            e.preventDefault();
-            alert("X: " + e.pageX + " - Y: " + e.pageY)
-        });
-        $("#hrefTres").mouseenter(function (evento) {
-            evento.preventDefault();
-            $("#tip1").css("left", evento.pageX + 5);
-            $("#tip1").css("top", evento.pageY + 5);
-            $("#tip1").css("display", "block");
-        });
-        $("#hrefTres").mouseleave(function (e) {
-            $("#tip1").css("display", "none");
-        });
-    });
-</script>
+﻿
 <div class="well">
-    <a id="hrefUno" href="~/Content/Estilos.css" class="claseUno well">Clase Uno</a>
-    <br>
+    @Html.ActionLink(linkText: "Ir al ejercicio 1", actionName: "Ejercicio1", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
 </div>
 <div class="well">
-    <a id="hrefDos" href="~/Content/Estilos.css" class="claseDos well">Clase Dos</a>
-    <br>
+    @Html.ActionLink(linkText: "Ir al ejercicio 2", actionName: "Ejercicio2", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
 </div>
-<div class="well">
-    <a id="hrefTres" href="~/Content/Estilos.css" class="claseTres well">Clase Tres</a>
-</div>
-
-<div class="tip" id="tip1">Click para ver la hoja de estilos</div>

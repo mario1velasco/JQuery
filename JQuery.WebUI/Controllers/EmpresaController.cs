@@ -18,5 +18,13 @@ namespace JQuery.WebUI.Controllers
         {
             return View(repository.Empresas);
         }
+        public ActionResult Ejercicio1()
+        {
+            return View();
+        }
+        public ActionResult Ejercicio2()
+        {
+            return View();
+        }
     }
 }

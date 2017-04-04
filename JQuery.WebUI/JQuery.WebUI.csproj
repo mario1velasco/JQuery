@@ -119,16 +119,32 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\colorbox.css" />
     <Content Include="Content\Estilos.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\ajax.html" />
+    <Content Include="images\border.png" />
+    <Content Include="images\controls.png" />
+    <Content Include="images\daisy%402x.jpg" />
+    <Content Include="images\daisy.jpg" />
+    <Content Include="images\homer.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading_background.png" />
+    <Content Include="images\marylou.jpg" />
+    <Content Include="images\ohoopee1.jpg" />
+    <Content Include="images\ohoopee2.jpg" />
+    <Content Include="images\ohoopee3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery.colorbox-min.js" />
+    <Content Include="Scripts\jquery.colorbox.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="images\overlay.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -153,6 +169,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Empresa\Ejercicio1.cshtml" />
+    <Content Include="Views\Empresa\Ejercicio2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

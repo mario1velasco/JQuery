@@ -1,0 +1,39 @@
+﻿<h1>JQuery Ejercicio 1</h1>
+<h5>Intercambiar la hoja de estilos CSS con jQuery</h5>
+<h6>Cómo hacer un script jQuery para cambiar la hoja de estilo que está asociada a una página, de modo que el navegador pase a utilizar otro archivo CSS para aplicar los estilos a la página.</h6>
+
+<script>
+    $(document).ready(function () {
+        $("#hrefUno").click(function (evento) {
+            evento.preventDefault();
+            $("#hrefUno").attr("class", "claseDos well");
+            $("#hrefUno").text("Clase Dos");
+        });
+        $("#hrefDos").click(function (e) {
+            e.preventDefault();
+            alert("X: " + e.pageX + " - Y: " + e.pageY)
+        });
+        $("#hrefTres").mouseenter(function (evento) {
+            evento.preventDefault();
+            $("#tip1").css("left", evento.pageX + 5);
+            $("#tip1").css("top", evento.pageY + 5);
+            $("#tip1").css("display", "block");
+        });
+        $("#hrefTres").mouseleave(function (e) {
+            $("#tip1").css("display", "none");
+        });
+    });
+</script>
+<div class="well">
+    <a id="hrefUno" href="~/Content/Estilos.css" class="claseUno well">Clase Uno</a>
+    <br>
+</div>
+<div class="well">
+    <a id="hrefDos" href="~/Content/Estilos.css" class="claseDos well">Clase Dos</a>
+    <br>
+</div>
+<div class="well">
+    <a id="hrefTres" href="~/Content/Estilos.css" class="claseTres well">Clase Tres</a>
+</div>
+
+<div class="tip" id="tip1">Click para ver la hoja de estilos</div>
