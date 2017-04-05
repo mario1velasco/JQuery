@@ -1,0 +1,48 @@
+﻿<h2>Ejercicio 4</h2>
+<h5>Plugin jQuery para hacer un Tip simple</h5>
+<h6>Ejemplo de pluging en jQuery que nos permitirá implementar una funcionalidad de tip sobre elementos de la página.</h6>
+<h6></h6>
+<style type="text/css">
+    .tip {
+        background-color: #ffcc99;
+        padding: 10px;
+        display: none;
+        position: absolute;
+        width: 200px;
+    }
+</style>
+<script>
+
+    jQuery.fn.creaTip = function (textoTip) {
+        this.each(function () {
+            elem = $(this);
+            var miTip = $('<div class="tip">' + textoTip + '</div>');
+            $(document.body).append(miTip);
+            elem.data("capatip", miTip);
+
+            elem.mouseenter(function (e) {
+                var miTip = $(this).data("capatip");
+                miTip.css("left", e.pageX + 10);
+                miTip.css("top", e.pageY + 5);
+                miTip.show(500);
+            });
+            elem.mouseleave(function (e) {
+                var miTip = $(this).data("capatip");
+                miTip.hide(500);
+            });
+        });
+
+        return this;
+    };
+
+
+    $(document).ready(function () {
+        $("#elemento1").creaTip("todo bien...");
+        $("#elemento2").creaTip("Otra prueba...");
+    })
+</script>
+
+<div id="elemento1" style="background-color: #ccccff; padding: 5px;">Pasa el ratón por encima de esta capa...</div>
+<p>
+    Este texto es para poner <a id="elemento2" href="#">este enlace que también tiene tip</a>.
+</p>

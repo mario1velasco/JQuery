@@ -172,6 +172,8 @@
     <Content Include="Views\Empresa\Ejercicio1.cshtml" />
     <Content Include="Views\Empresa\Ejercicio2.cshtml" />
     <Content Include="Views\Empresa\Ejercicio3.cshtml" />
+    <Content Include="Views\Empresa\Ejercicio4.cshtml" />
+    <Content Include="Views\Empresa\Ejercicio5.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
