@@ -1,19 +1,19 @@
-﻿@using JQuery.Domain.Entities
-@model IEnumerable<Empresa>
-
-
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index JQUERY</h2>
-
-@foreach (var p in Model)
-{
-    <div>
-        <h3>@p.ID</h3>
-        @p.NombreEmpresa
-        <h4>@p.Direccion</h4>
-    </div>
-}
-
+﻿
+<div class="well">
+    @Html.ActionLink(linkText: "Ir al ejercicio 1", actionName: "Ejercicio1", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
+</div>
+<div class="well">
+    @Html.ActionLink(linkText: "Ir al ejercicio 2", actionName: "Ejercicio2", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
+</div>
+<div class="well">
+    @Html.ActionLink(linkText: "Ir al ejercicio 3", actionName: "Ejercicio3", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
+</div>
+<div class="well">
+    @Html.ActionLink(linkText: "Ir al ejercicio 4", actionName: "Ejercicio4", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
+</div>
+<div class="well">
+    @Html.ActionLink(linkText: "Ir al ejercicio 5", actionName: "Ejercicio5", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
+</div>
+<div class="well">
+    @Html.ActionLink(linkText: "Ir al ejercicio 6", actionName: "Ejercicio6", controllerName: "Empresa", routeValues: new { id = 5 }, htmlAttributes: null)
+</div>

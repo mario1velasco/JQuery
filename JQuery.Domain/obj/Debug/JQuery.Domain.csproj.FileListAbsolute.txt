@@ -23,3 +23,28 @@ c:\users\ineco.mva\documents\visual studio 2015\Projects\JQuery\JQuery.Domain\bi
 c:\users\ineco.mva\documents\visual studio 2015\Projects\JQuery\JQuery.Domain\bin\Debug\EntityFramework.SqlServer.dll
 c:\users\ineco.mva\documents\visual studio 2015\Projects\JQuery\JQuery.Domain\bin\Debug\EntityFramework.xml
 c:\users\ineco.mva\documents\visual studio 2015\Projects\JQuery\JQuery.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\BBDD\Empresa.mdf
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\BBDD\Empresa_log.ldf
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\JQuery.Domain.dll.config
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\JQuery.Domain.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\JQuery.Domain.pdb
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\EntityFramework.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\EntityFramework.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\obj\Debug\JQuery.Domain.csprojResolveAssemblyReference.cache
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\obj\Debug\JQuery.Domain.dll
+C:\Users\ineco.mva\Desktop\GIT\JQuery\JQuery.Domain\obj\Debug\JQuery.Domain.pdb
