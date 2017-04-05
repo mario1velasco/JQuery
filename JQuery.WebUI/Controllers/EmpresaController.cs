@@ -38,5 +38,9 @@ namespace JQuery.WebUI.Controllers
         {
             return View();
         }
+        public ActionResult Ejercicio6()
+        {
+            return View();
+        }
     }
 }

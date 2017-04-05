@@ -1,0 +1,56 @@
+﻿<h2>Ejercicio 6</h2>
+<h5>Plugin jQuery Fortaleza de una clave</h5>
+<h6>Creamos un plugin con jQuery para mostrar la fortaleza de una clave escrita en un campo input de formulario.</h6>
+<h6></h6>
+
+<script>
+    jQuery.fn.fortalezaClave = function () {
+        $(this).each(function () {
+            elem = $(this);
+            msg = $('<span class="fortaleza alert-danger">Escribe la clave</span>');
+            elem.after(msg)
+            elem.data("mensaje", msg);
+
+            elem.keyup(function (e) {
+                elem = $(this);
+                msg = elem.data("mensaje")
+                claveActual = elem.val();
+                var fortalezaActual = "";
+                console.log(claveActual.length)
+                switch (claveActual.length) {
+                    case 0:
+                        fortalezaActual = '<span class="fortaleza alert-danger">Escribe la clave</span>';//"Escribe la clave";
+                        console.log(aki)
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        fortalezaActual = '<span class="fortaleza alert-danger">La clave debe contener al menos 4 caracteres</span>';//"La clave debe contener al menos 4 caracteres";
+                        break;
+                    case 4:
+                    case 5:
+                        fortalezaActual = '<span class="fortaleza alert-warning">Clave no segura</span>';//"Clave no segura";
+                        break;
+                    case 6:
+                    case 7:
+                        fortalezaActual = '<span class="fortaleza alert-warning">Clave medianamente segura</span>'; //"Clave medianamente segura";
+                        break;
+                    default:
+                        fortalezaActual = '<span class="fortaleza alert-success">Clave segura</span>'; //"Clave segura";
+                }
+                msg.html(fortalezaActual);
+            });
+        });
+        return this;
+    }
+    //cuando la página esté lista, cargo la funcionalidad del plugin sobre el elemento password
+    $(document).ready(function () {
+        $("#clave").fortalezaClave();
+    });
+</script>
+<form>
+    <p>
+        Clave:<br />
+        <input type="password" name="clave" id="clave" /><!--class="alert-danger alert-warning alert-success"> --> 
+    </p>
+</form>
