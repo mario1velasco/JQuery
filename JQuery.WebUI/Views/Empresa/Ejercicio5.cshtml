@@ -1,7 +1,75 @@
-﻿
-@{
-    ViewBag.Title = "Ejercicio5";
-}
+﻿<h2>Ejercicio 5</h2>
+<h5>Plugin jQuery: textarea con cuenta de caracteres</h5>
+<h6>Un ejemplo de plugin en jQuery para hacer un sistema de tip más avanzado, que permite configurarse por medio de unas opciones en el plugin.</h6>
+<h6></h6>
+<style type="text/css">
+    .tip {
+        background-color: #ffcc99;
+        padding: 10px;
+        display: none;
+        position: absolute;
+        width: 200px;
+    }
+    .otroestilotip {
+        background-color: lightskyblue;
+        padding: 20px;
+        display: none;
+        position: absolute;
+        width: 400px;
+    }
+</style>
+<script>
+    jQuery.fn.creaTip = function (textoTip, opciones) {
+        var configuracion = {
+            velocidad: 500,
+            animacionMuestra: { width: "show" },
+            animacionOculta: { opacity: "hide" },
+            claseTip: "tip"
+        }
+        jQuery.extend(configuracion, opciones);
 
-<h2>Ejercicio5</h2>
+        this.each(function () {
+            elem = $(this);
+            var miTip = $('<div class="' + configuracion.claseTip + '">' + textoTip + '</div>');
+            $(document.body).append(miTip);
+            elem.data("capatip", miTip);
 
+            elem.mouseenter(function (e) {
+                var miTip = $(this).data("capatip");
+                miTip.css({
+                    left: e.pageX + 10,
+                    top: e.pageY + 5
+                });
+                miTip.animate(configuracion.animacionMuestra, configuracion.velocidad);
+            });
+            elem.mouseleave(function (e) {
+                var miTip = $(this).data("capatip");
+                miTip.animate(configuracion.animacionOculta, configuracion.velocidad);
+            });
+        });
+
+        return this;
+    };
+    $(document).ready(function () {
+        $("#elemento1").creaTip("todo bien...");
+        $("#elemento2").creaTip("Otra prueba...", {
+            velocidad: 1000,
+            claseTip: "otroestilotip",
+            animacionMuestra: {
+                width: "show",
+                padding: '25px',
+                'font-size': '2em'
+            },
+            animacionOculta: {
+                opacity: "hide",
+                padding: '5px',
+                'font-size': '1em'
+            }
+        });
+    })
+</script>
+
+<div id="elemento1" style="background-color: #ccccff; padding: 5px;">Pasa el ratón por encima de esta capa...</div>
+<p>
+    Este texto es para poner <a id="elemento2" href="#">este enlace que también tiene tip</a>.
+</p>
